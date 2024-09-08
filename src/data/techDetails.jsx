@@ -169,20 +169,72 @@ const techDetails = {
     </div>
   ),
   database: (
-    <ul className="list-disc pl-5 text-gray-700">
-      <li>MySQL</li>
-      <li>PostgreSQL</li>
-      <li>MongoDB</li>
-      <li>SQLite</li>
-    </ul>
+    <div className="border mx-auto p-4">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+        <div className="flex flex-col items-center justify-center bg-white/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
+          <img
+            className="w-20 h-20 object-contain"
+            src="/TechnologyStack/microsoft-sql-server-logo-svgrepo-com.svg"
+            alt="Ms sql server"
+          />
+          <p className="text-center mt-2">Microsoft Sql Server</p>
+        </div>
+        <div className="flex flex-col items-center justify-center bg-white/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
+          <img
+            className="w-16 h-16 object-contain"
+            src="/TechnologyStack/mongodb-opened-svgrepo-com.svg"
+            alt="mongo db"
+          />
+          <p className="text-center mt-2">Mongo DB</p>
+        </div>
+        <div className="flex flex-col items-center justify-center bg-white/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
+          <img
+            className="w-16 h-16 object-contain"
+            src="/TechnologyStack/oracle-svgrepo-com.svg"
+            alt="Tensorflow"
+          />
+          <p className="text-center mt-2">Oracle</p>
+        </div>
+      </div>
+    </div>
   ),
   frameworks: (
-    <ul className="list-disc pl-5 text-gray-700">
-      <li>Next.js</li>
-      <li>Nuxt.js</li>
-      <li>Spring Boot</li>
-      <li>ASP.NET Core</li>
-    </ul>
+    <div className="border mx-auto p-4">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+        <div className="flex flex-col items-center justify-center bg-white/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
+          <img
+            className="w-20 h-20 object-contain"
+            src="/TechnologyStack/next-js-svgrepo-com.svg"
+            alt="Next js"
+          />
+          <p className="text-center mt-2">Next Js</p>
+        </div>
+        <div className="flex flex-col items-center justify-center bg-white/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
+          <img
+            className="w-16 h-16 object-contain"
+            src="/TechnologyStack/nuxt-js-svgrepo-com.svg"
+            alt="Nuxt Js"
+          />
+          <p className="text-center mt-2">Nuxt Js</p>
+        </div>
+        <div className="flex flex-col items-center justify-center bg-white/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
+          <img
+            className="w-16 h-16 object-contain"
+            src="/TechnologyStack/spring-boot-svgrepo-com.svg"
+            alt="Spring Boot"
+          />
+          <p className="text-center mt-2">Spring Boot</p>
+        </div>
+        <div className="flex flex-col items-center justify-center bg-white/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
+          <img
+            className="w-16 h-16 object-contain"
+            src="/TechnologyStack/dotnet-svgrepo-com.svg"
+            alt=".NET Core"
+          />
+          <p className="text-center mt-2">.NET Core</p>
+        </div>
+      </div>
+    </div>
   ),
 };
 
