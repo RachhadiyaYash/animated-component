@@ -1,5 +1,5 @@
 const techDetails = {
-  frontend: (
+  Frontend: (
     <div className=" mx-auto p-4">
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
         <div className="flex flex-col items-center justify-center bg-white/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
@@ -54,7 +54,7 @@ const techDetails = {
     </div>
   ),
 
-  backend: (
+  Backend: (
     <div className=" mx-auto p-4">
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
         <div className="flex flex-col items-center justify-center bg-white/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
@@ -92,7 +92,7 @@ const techDetails = {
       </div>
     </div>
   ),
-  mobile: (
+  Mobile: (
     <div className=" mx-auto p-4">
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
         <div className="flex flex-col items-center justify-center bg-white/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
@@ -138,7 +138,7 @@ const techDetails = {
       </div>
     </div>
   ),
-  aiml: (
+  AIML: (
     <div className=" mx-auto p-4">
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
         <div className="flex flex-col items-center justify-center bg-white/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
@@ -168,7 +168,7 @@ const techDetails = {
       </div>
     </div>
   ),
-  database: (
+  Database: (
     <div className="mx-auto p-4">
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
         <div className="flex flex-col items-center justify-center bg-white/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
