@@ -139,12 +139,34 @@ const techDetails = {
     </div>
   ),
   aiml: (
-    <ul className="list-disc pl-5 text-gray-700">
-      <li>TensorFlow</li>
-      <li>PyTorch</li>
-      <li>Keras</li>
-      <li>Scikit-learn</li>
-    </ul>
+    <div className="border mx-auto p-4">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+        <div className="flex flex-col items-center justify-center bg-white/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
+          <img
+            className="w-20 h-20 object-contain"
+            src="/TechnologyStack/keras-svgrepo-com.svg"
+            alt="Keras"
+          />
+          <p className="text-center mt-2">Keras</p>
+        </div>
+        <div className="flex flex-col items-center justify-center bg-white/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
+          <img
+            className="w-16 h-16 object-contain"
+            src="/TechnologyStack/pytorch-svgrepo-com.svg"
+            alt="pytorch"
+          />
+          <p className="text-center mt-2">Pytorch</p>
+        </div>
+        <div className="flex flex-col items-center justify-center bg-white/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
+          <img
+            className="w-16 h-16 object-contain"
+            src="/TechnologyStack/tensorflow-svgrepo-com.svg"
+            alt="Tensorflow"
+          />
+          <p className="text-center mt-2">Tensorflow</p>
+        </div>
+      </div>
+    </div>
   ),
   database: (
     <ul className="list-disc pl-5 text-gray-700">
