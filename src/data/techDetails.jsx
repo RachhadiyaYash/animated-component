@@ -1,6 +1,6 @@
 const techDetails = {
   frontend: (
-    <div className="border mx-auto p-4">
+    <div className=" mx-auto p-4">
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
         <div className="flex flex-col items-center justify-center bg-white/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
           <img
@@ -55,7 +55,7 @@ const techDetails = {
   ),
 
   backend: (
-    <div className="border mx-auto p-4">
+    <div className=" mx-auto p-4">
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
         <div className="flex flex-col items-center justify-center bg-white/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
           <img
@@ -93,7 +93,7 @@ const techDetails = {
     </div>
   ),
   mobile: (
-    <div className="border mx-auto p-4">
+    <div className=" mx-auto p-4">
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
         <div className="flex flex-col items-center justify-center bg-white/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
           <img
@@ -139,7 +139,7 @@ const techDetails = {
     </div>
   ),
   aiml: (
-    <div className="border mx-auto p-4">
+    <div className=" mx-auto p-4">
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
         <div className="flex flex-col items-center justify-center bg-white/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
           <img
@@ -169,7 +169,7 @@ const techDetails = {
     </div>
   ),
   database: (
-    <div className="border mx-auto p-4">
+    <div className="mx-auto p-4">
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
         <div className="flex flex-col items-center justify-center bg-white/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
           <img
@@ -199,7 +199,7 @@ const techDetails = {
     </div>
   ),
   frameworks: (
-    <div className="border mx-auto p-4">
+    <div className="mx-auto p-4">
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
         <div className="flex flex-col items-center justify-center bg-white/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
           <img

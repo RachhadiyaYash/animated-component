@@ -13,8 +13,8 @@ const TechnologyStack = () => {
     <>
       <br />
       <br />
-      <div className="m-6 h-[500px] max-w-6xl mx-auto">
-        <div className="container mx-auto border-2 rounded-xl border-blue-500">
+      <div className=" max-w-6xl mx-auto">
+        <div className="container mx-auto  ">
           <div className="hidden lg:flex gap-2 p-4">
             <div className="w-1/3 space-y-1">
               {Object.keys(techDetails).map((tech) => (
@@ -22,8 +22,8 @@ const TechnologyStack = () => {
                   key={tech}
                   className={`p-4 bg-white border cursor-pointer ${
                     activeSection === tech
-                      ? "border-blue-500 font-bold"
-                      : "border-gray-300"
+                      ? "border-blue-500 font-bold text-blue-800"
+                      : "border-blue-500"
                   } rounded`}
                   onClick={() => toggleTech(tech)}
                 >
@@ -31,7 +31,7 @@ const TechnologyStack = () => {
                 </div>
               ))}
             </div>
-            <div className="w-2/3 bg-white border rounded">
+            <div className="w-2/3 bg-white border border-blue-500 rounded">
               <AnimatePresence>
                 {activeSection && (
                   <motion.div
@@ -49,16 +49,18 @@ const TechnologyStack = () => {
           </div>
 
           {/* For small screens */}
-          <div className="lg:hidden h-[500px]">
+          <div className="lg:hidden border border-blue-500 rounded-lg m-2">
             <div className="flex flex-col">
               {Object.keys(techDetails).map((tech) => (
                 <div
                   key={tech}
-                  className="p-4 bg-white border border-gray-300 rounded"
+                  className="p-4 bg-white border border-blue-500 "
                 >
                   <div
                     className={`cursor-pointer ${
-                      activeSection === tech ? "font-bold" : ""
+                      activeSection === tech
+                        ? "font-bold text-blue-800 pl-4"
+                        : ""
                     }`}
                     onClick={() => toggleTech(tech)}
                   >
