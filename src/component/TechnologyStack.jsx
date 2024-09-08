@@ -60,7 +60,7 @@ const TechnologyStack = () => {
               {Object.keys(techDetails).map((tech) => (
                 <div
                   key={tech}
-                  className="p-4 bg-white border  border-blue-500"
+                  className="p-4 bg-white border border-blue-500 relative"
                 >
                   <div
                     className={`cursor-pointer ${
@@ -71,6 +71,22 @@ const TechnologyStack = () => {
                     onClick={() => toggleTech(tech)}
                   >
                     {tech.charAt(0).toUpperCase() + tech.slice(1)}
+                    {activeSection !== tech && (
+                      <svg
+                        className="w-4 h-4 absolute right-4 top-1/2 transform -translate-y-1/2 transition-transform duration-300"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    )}
                   </div>
                   <AnimatePresence>
                     {activeSection === tech && (
