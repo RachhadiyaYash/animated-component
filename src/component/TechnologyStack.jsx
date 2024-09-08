@@ -45,7 +45,7 @@ const TechnologyStack = () => {
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
-                    transition={{ duration: 0.3 }}
+                    transition={{ duration: 0.5 }}
                   >
                     {techDetails[activeSection]}
                   </motion.div>
@@ -58,7 +58,10 @@ const TechnologyStack = () => {
           <div className="lg:hidden border border-blue-500 rounded-lg m-2">
             <div className="flex flex-col">
               {Object.keys(techDetails).map((tech) => (
-                <div key={tech} className="p-4 bg-white border border-blue-500">
+                <div
+                  key={tech}
+                  className="p-4 bg-white border  border-blue-500"
+                >
                   <div
                     className={`cursor-pointer ${
                       activeSection === tech
@@ -76,7 +79,7 @@ const TechnologyStack = () => {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: "auto" }}
                         exit={{ opacity: 0, height: 0 }}
-                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                        transition={{ duration: 0.5, ease: "easeInOut" }}
                       >
                         {techDetails[activeSection]}
                       </motion.div>
