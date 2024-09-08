@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import techDetails from "../data/techDetails";
 
 const TechnologyStack = () => {
-  const [activeSection, setActiveSection] = useState("frontend");
+  const [activeSection, setActiveSection] = useState("Frontend");
+
+  // Ensure the frontend section is open on initial load
+  useEffect(() => {
+    setActiveSection("Frontend");
+  }, []);
 
   const toggleTech = (tech) => {
     setActiveSection(activeSection === tech ? "" : tech);
@@ -13,8 +18,9 @@ const TechnologyStack = () => {
     <>
       <br />
       <br />
-      <div className=" max-w-6xl mx-auto">
-        <div className="container mx-auto  ">
+      <div className="max-w-6xl mx-auto">
+        <div className="container mx-auto">
+          {/* For large screens */}
           <div className="hidden lg:flex gap-2 p-4">
             <div className="w-1/3 space-y-1">
               {Object.keys(techDetails).map((tech) => (
@@ -52,10 +58,7 @@ const TechnologyStack = () => {
           <div className="lg:hidden border border-blue-500 rounded-lg m-2">
             <div className="flex flex-col">
               {Object.keys(techDetails).map((tech) => (
-                <div
-                  key={tech}
-                  className="p-4 bg-white border border-blue-500 "
-                >
+                <div key={tech} className="p-4 bg-white border border-blue-500">
                   <div
                     className={`cursor-pointer ${
                       activeSection === tech
