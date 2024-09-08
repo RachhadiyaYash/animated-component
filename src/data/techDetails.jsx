@@ -93,12 +93,50 @@ const techDetails = {
     </div>
   ),
   mobile: (
-    <ul className="list-disc pl-5 text-gray-700">
-      <li>React Native</li>
-      <li>Flutter</li>
-      <li>Swift</li>
-      <li>Kotlin</li>
-    </ul>
+    <div className="border mx-auto p-4">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+        <div className="flex flex-col items-center justify-center bg-white/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
+          <img
+            className="w-20 h-20 object-contain"
+            src="/TechnologyStack/flutter-svgrepo-com.svg"
+            alt="Flutter"
+          />
+          <p className="text-center mt-2">Flutter</p>
+        </div>
+        <div className="flex flex-col items-center justify-center bg-white/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
+          <img
+            className="w-16 h-16 object-contain"
+            src="/TechnologyStack/ionic-svgrepo-com.svg"
+            alt="JavaScript"
+          />
+          <p className="text-center mt-2">Ionic</p>
+        </div>
+        <div className="flex flex-col items-center justify-center bg-white/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
+          <img
+            className="w-16 h-16 object-contain"
+            src="/TechnologyStack/react-svgrepo-com.svg"
+            alt="Next.js"
+          />
+          <p className="text-center mt-2">React Native</p>
+        </div>
+        <div className="flex flex-col items-center justify-center bg-white/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
+          <img
+            className="w-16 h-16 object-contain"
+            src="/TechnologyStack/xamarin-svgrepo-com.svg"
+            alt="React"
+          />
+          <p className="text-center mt-2">Xamrin</p>
+        </div>
+        <div className="flex flex-col items-center justify-center bg-white/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
+          <img
+            className="w-16 h-16 object-contain"
+            src="/TechnologyStack/apache-cordova-svgrepo-com.svg"
+            alt="React"
+          />
+          <p className="text-center mt-2">Apache Cordova</p>
+        </div>
+      </div>
+    </div>
   ),
   aiml: (
     <ul className="list-disc pl-5 text-gray-700">
